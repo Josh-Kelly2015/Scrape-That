@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Scraper App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="btn btn-warning">Home <span class="sr-only">(current)</span></li>
+          <li class="btn btn-info ml-2" id ="scrape" >Scrape</li>
+          <li class="btn btn-danger ml-2">Favorites</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main role="main" class="flex-shrink-0">
+    <div class="row mt-5">
+      <div class="col mt-4">
+        <div class="container">
+          <div id="articles" class="list-group-active hover"></div>
+        </div>
+      </div>
+      <div class="col mt-4">
+        <div class="container">
+          <form>
+            <div id="notes" class="form-group"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer mt-auto py-4 bg-dark"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
